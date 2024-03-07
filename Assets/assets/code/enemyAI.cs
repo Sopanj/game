@@ -43,6 +43,7 @@ public class enemyAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         if (TargetInDistance() && followEnabled)
         {
             PathFollow();

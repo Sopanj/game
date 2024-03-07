@@ -26,8 +26,7 @@ public class movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, JumpingPower);
            // anim.SetBool("jump", true);
         }
-
-
+        
 
 
 
@@ -56,5 +55,6 @@ public class movement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
+        
     }
 }
